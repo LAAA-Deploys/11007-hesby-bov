@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>11007-11013 Hesby St | Development Site BOV | LAAA Team</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,Helvetica,sans-serif;background:#f4f5f7;color:#1a1a1a;font-size:15px;line-height:1.6}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{background:linear-gradient(135deg,#0a2540,#143b6b);color:#fff;border-bottom:4px solid #b8985a;padding:44px 0 36px}
+.eyebrow{text-transform:uppercase;letter-spacing:2.5px;font-size:12px;color:#b8985a;font-weight:700;margin-bottom:10px}
+header h1{font-size:34px;font-weight:700;line-height:1.15;margin-bottom:8px}
+header .subtitle{font-size:16px;color:#cbd5e1;margin-bottom:18px}
+header .meta{font-size:13px;color:#9fb3cd;display:flex;flex-wrap:wrap;gap:6px 22px}
+nav.toc{background:#0a2540;border-bottom:1px solid #1a365a;position:sticky;top:0;z-index:50;box-shadow:0 2px 4px rgba(0,0,0,0.15)}
+nav.toc .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:0;padding:0 24px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+nav.toc a{color:#cbd5e1;text-decoration:none;font-size:12px;font-weight:600;letter-spacing:0.6px;text-transform:uppercase;padding:14px 16px;border-bottom:2px solid transparent;transition:color 0.15s,border-color 0.15s;white-space:nowrap}
+nav.toc a:hover{color:#b8985a;border-bottom-color:#b8985a}
+nav.toc a.first{padding-left:0}
+@media (max-width:760px){nav.toc a{font-size:11px;padding:12px 10px;letter-spacing:0.4px}}
+section[id]{scroll-margin-top:60px}
+main{padding:28px 0 8px}
+section.card{background:#fff;border-radius:8px;box-shadow:0 1px 3px rgba(10,37,64,0.08);padding:28px 30px;margin-bottom:26px}
+section.card h2{color:#0a2540;font-size:22px;padding-bottom:10px;border-bottom:2px solid #b8985a;margin-bottom:18px}
+section.card h3{color:#0a2540;font-size:16px;margin:22px 0 10px}
+p{margin-bottom:12px}
+.stat-band{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:18px 0 6px}
+.stat{background:#f8fafc;border:1px solid #e6e9ef;border-left:3px solid #b8985a;border-radius:6px;padding:12px 14px}
+.stat .l{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#666;margin-bottom:4px}
+.stat .v{font-size:18px;font-weight:700;color:#0a2540;line-height:1.25}
+.stat .s{font-size:12px;color:#666;margin-top:2px}
+.hero-frame{border-radius:8px;overflow:hidden;margin:6px 0 16px;background:#0a2540;aspect-ratio:16/9}
+.hero-frame img{width:100%;height:100%;object-fit:contain;display:block}
+.img-frame{border-radius:8px;overflow:hidden;background:#0a2540}
+.img-frame img{width:100%;height:100%;object-fit:contain;display:block}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0}
+.two-col .img-frame.sv{aspect-ratio:8/5}
+.caption{font-size:12px;color:#666;margin-top:6px}
+.spec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin:16px 0}
+.spec{background:#f8fafc;border:1px solid #e6e9ef;border-radius:6px;padding:12px 16px;font-size:13.5px}
+.spec b{display:block;color:#0a2540;font-size:12px;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:3px}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:14px 0 6px}
+th{background:#0a2540;color:#fff;text-align:left;padding:10px 12px;font-size:12px;text-transform:uppercase;letter-spacing:0.6px;white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid #e6e9ef;vertical-align:top}
+tr:nth-child(even) td{background:#f8fafc}
+td.num,th.num{text-align:right;white-space:nowrap}
+.psf{font-weight:700;color:#0a2540;white-space:nowrap}
+.psf.hot{color:#c0392b}
+tr.avg td{background:#eef2f7;font-weight:700;color:#0a2540;border-top:2px solid #0a2540}
+.table-scroll{overflow-x:auto}
+.b-closed{background:#e6f4ea;color:#1e7e34;border-radius:4px;padding:2px 8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;white-space:nowrap}
+.fn{font-size:12px;color:#666;margin-top:8px}
+.path-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:18px 0 8px}
+.path-card{border:1px solid #e6e9ef;border-radius:8px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.path-card .ph{padding:16px 18px;color:#fff}
+.path-card.pa .ph{background:linear-gradient(135deg,#0a2540,#143b6b)}
+.path-card.pc .ph{background:linear-gradient(135deg,#5a4a1f,#8a6f2a)}
+.path-card.pd .ph{background:linear-gradient(135deg,#1f5e3a,#2f8a55)}
+.path-card .ph .ptag{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;opacity:.88;margin-bottom:6px}
+.path-card .ph .pname{font-size:18px;font-weight:700;line-height:1.2}
+.path-card .ph .punits{font-size:13px;opacity:.92;margin-top:4px}
+.path-card .pb-body{padding:16px 20px;font-size:13.5px;flex:1}
+.path-card .pb-body ul{margin:0 0 0 18px}
+.path-card .pb-body li{margin-bottom:7px;line-height:1.55}
+.path-card .pmetric{display:flex;justify-content:space-between;padding:9px 20px;border-top:1px solid #e6e9ef;font-size:12.5px}
+.path-card .pmetric .l{color:#666}
+.path-card .pmetric .v{font-weight:700;color:#0a2540}
+.info-callout{background:#f8fafc;border:1px solid #e6e9ef;border-left:4px solid #b8985a;border-radius:6px;padding:14px 18px;font-size:13.5px;margin:14px 0}
+.tk-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:16px 0}
+.tk{background:#f8fafc;border:1px solid #e6e9ef;border-left:4px solid #b8985a;border-radius:6px;padding:16px 18px;font-size:13.5px}
+.tk .n{display:inline-block;background:#0a2540;color:#fff;border-radius:50%;width:24px;height:24px;line-height:24px;text-align:center;font-size:12px;font-weight:700;margin-bottom:8px}
+.tk b{color:#0a2540}
+.recommend{background:linear-gradient(135deg,#8a6f2a,#b8985a);border-radius:8px;color:#fff;padding:26px 28px;margin:18px 0}
+.recommend .r-eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:700;opacity:.9;margin-bottom:6px}
+.recommend .r-band{font-size:30px;font-weight:800;line-height:1.2}
+.recommend .r-sub{font-size:14px;opacity:.95;margin-top:6px}
+.price-compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0 4px}
+.pc-box{background:#f8fafc;border:1px solid #e6e9ef;border-radius:6px;padding:14px 16px}
+.pc-box .l{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#666;margin-bottom:4px}
+.pc-box .v{font-size:19px;font-weight:700;color:#0a2540}
+.pc-box .s{font-size:12px;color:#666;margin-top:3px}
+.plat-strip{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.plat{background:#f8fafc;border:1px solid #e6e9ef;border-radius:20px;padding:7px 16px;font-size:13px;font-weight:600;color:#0a2540;white-space:nowrap}
+.inv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin:16px 0}
+a.inv-item{display:flex;flex-direction:column;background:#f8fafc;border:1px solid #e6e9ef;border-left:4px solid #b8985a;border-radius:6px;padding:16px 18px;text-decoration:none;color:#1a1a1a;transition:box-shadow .15s}
+a.inv-item:hover{box-shadow:0 3px 10px rgba(10,37,64,.18)}
+.inv-item .addr{font-weight:700;color:#0a2540;font-size:15px}
+.inv-item .city{font-size:12.5px;color:#666;margin-bottom:6px}
+.inv-item .price{font-size:17px;font-weight:800;color:#0a2540}
+.inv-item .facts{font-size:12.5px;color:#666;margin:3px 0 8px}
+.inv-item .desc{font-size:13px;line-height:1.5;flex:1}
+.inv-item .go{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;color:#8a6f2a;text-transform:uppercase;letter-spacing:.8px}
+.team-leaders{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0}
+.leader{background:#f8fafc;border:1px solid #e6e9ef;border-radius:8px;padding:22px;text-align:center}
+.headshot-img-lg{width:100px;height:100px;border-radius:50%;border:3px solid #b8985a;object-fit:cover;background:#0a2540;display:block;margin:0 auto 12px}
+.leader .nm{font-size:17px;font-weight:700;color:#0a2540}
+.leader .tt{font-size:13px;color:#666;margin:2px 0 8px}
+.leader .ct{font-size:13px;color:#1a1a1a}
+.team-roster{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:14px 0}
+.roster-card{background:#f8fafc;border:1px solid #e6e9ef;border-radius:8px;padding:14px 10px;text-align:center}
+.roster-card .headshot-img-lg{width:72px;height:72px;border-width:2px;margin-bottom:10px}
+.roster-card .nm{font-size:13.5px;font-weight:700;color:#0a2540;line-height:1.3}
+.roster-card .tt{font-size:11.5px;color:#666;margin-top:2px}
+footer{background:#0a2540;border-top:4px solid #b8985a;color:#9fb3cd;padding:30px 0;font-size:12.5px;margin-top:34px}
+footer .f-title{color:#fff;font-weight:700;font-size:14px;margin-bottom:6px}
+footer p{margin-bottom:10px;line-height:1.55}
+@media (max-width:760px){header h1{font-size:26px}.two-col{grid-template-columns:1fr}.team-leaders{grid-template-columns:1fr}section.card{padding:22px 18px}}
+@media (max-width:640px){header h1{font-size:22px}.recommend .r-band{font-size:24px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Broker Opinion of Value</div>
+    <h1>11007-11013 Hesby Street</h1>
+    <div class="subtitle">15,008 SF R4-1VL / TOC Tier 3 development site &middot; North Hollywood (NoHo Arts District), CA 91601</div>
+    <div class="meta">
+      <span>Prepared for: Shana Barghouti</span>
+      <span>Prepared by: The LAAA Team &middot; Marcus &amp; Millichap</span>
+      <span>August 12, 2026</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <a class="first" href="#summary">Summary</a>
+    <a href="#subject">Subject</a>
+    <a href="#pathways">Pathways</a>
+    <a href="#comps">Land Comps</a>
+    <a href="#takeaways">Takeaways</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#marketing">Marketing</a>
+    <a href="#listings">Listings</a>
+    <a href="#team">Team</a>
+  </div>
+</nav>
+
+<main>
+<div class="wrap">
+
+<section class="card" id="summary">
+  <h2>Executive Summary</h2>
+  <p>11007-11013 Hesby Street is a two-parcel, 15,008 SF (0.34 acres) development site just south of Magnolia Boulevard and just west of Lankershim Boulevard, on the southern edge of the NoHo Arts District. Both parcels are zoned <b>R4-1VL</b> with a High Medium Residential land use designation and sit inside a <b>TOC Tier 3</b> incentive area, an unusually strong zoning package for this block of the South Valley, where nearly all recent land trades have been R3 or commercial parcels.</p>
+  <p>The value of the offering is in the land. The site supports up to 37 apartment units by right, approximately 63 units under TOC Tier 3, and an effectively envelope-limited unit count as a 100% affordable project under the state density bonus. Four closed South Valley affordable-development land sales from March 2025 through July 2026 establish a band of $172 to $214 per land SF, averaging $193 per SF, and three of the four were purchased by affordable housing developers, with CMFA bond financing since recorded behind two of them. Applied to the subject, with a premium warranted by its superior R4/TOC zoning, the comp set supports pricing guidance of <b>$2.95M to $3.15M</b>.</p>
+  <div class="stat-band">
+    <div class="stat"><div class="l">Combined Lot</div><div class="v">15,008 SF</div><div class="s">0.34 acres, two parcels</div></div>
+    <div class="stat"><div class="l">Zoning</div><div class="v">R4-1VL</div><div class="s">TOC Tier 3</div></div>
+    <div class="stat"><div class="l">By-Right</div><div class="v">37 units</div><div class="s">1 unit per 400 SF</div></div>
+    <div class="stat"><div class="l">TOC Tier 3</div><div class="v">~63 units</div><div class="s">70% density increase</div></div>
+    <div class="stat"><div class="l">Pricing Guidance</div><div class="v">$2.95M-$3.15M</div><div class="s">$197-$210 per land SF</div></div>
+  </div>
+</section>
+
+<section class="card" id="subject">
+  <h2>Subject Property</h2>
+  <div class="hero-frame"><img src="images/hero_aerial.png" alt="Aerial view of 11007-11013 Hesby Street"></div>
+  <div class="spec-grid">
+    <div class="spec"><b>Address</b>11007 &amp; 11013 Hesby St, North Hollywood, CA 91601</div>
+    <div class="spec"><b>APNs</b>2353-008-026 (11007) &middot; 2353-008-025 (11013)</div>
+    <div class="spec"><b>Lot Size</b>7,503 SF + 7,505 SF = 15,008 SF (0.34 acres)</div>
+    <div class="spec"><b>Zoning</b>R4-1VL &middot; General Plan: High Medium Residential</div>
+    <div class="spec"><b>TOC</b>Tier 3 (density, FAR, height, and parking incentives)</div>
+    <div class="spec"><b>Existing Improvements</b>5 units in five 1940s structures (triplex, 1943 + duplex, 1947), RSO registered</div>
+    <div class="spec"><b>Legal</b>Hartsook Tract, Lots 32 &amp; 33, Block 3</div>
+    <div class="spec"><b>Location</b>One block from Lankershim Blvd; NoHo Arts District and Metro B (Red) / G Line station area</div>
+  </div>
+  <p>The two contiguous 50-foot lots assemble into a clean, flat, mid-block R4 site with alley-adjacent access off Hesby Street. The parcels are offered for their land value: the existing improvements are five older rental units in five small structures (3,519 SF of combined building area) that do not represent the highest and best use of 15,008 SF of R4-1VL / TOC Tier 3 land in this location.</p>
+  <div class="two-col">
+    <div>
+      <div class="img-frame sv"><img src="images/street_view.jpg" alt="Street view of the existing improvements on Hesby Street"></div>
+      <div class="caption">Existing 1940s improvements, Hesby Street frontage</div>
+    </div>
+    <div>
+      <div class="img-frame sv" style="aspect-ratio:16/9"><img src="images/context_aerial.png" alt="Neighborhood aerial context"></div>
+      <div class="caption">Neighborhood context: one block west of Lankershim Blvd</div>
+    </div>
+  </div>
+</section>
+
+<section class="card" id="pathways">
+  <h2>Development Pathways</h2>
+  <p>R4-1VL with TOC Tier 3 gives a buyer three distinct ways to build the site, each with a different unit count, timeline, and buyer pool. All unit counts are planning-level estimates to be confirmed by the buyer's architect and land-use counsel.</p>
+  <div class="path-grid">
+    <div class="path-card pa">
+      <div class="ph">
+        <div class="ptag">Pathway A &middot; Market Rate</div>
+        <div class="pname">By-Right R4</div>
+        <div class="punits">Up to 37 apartment units</div>
+      </div>
+      <div class="pb-body"><ul>
+        <li>One unit per 400 SF of R4 lot area on 15,008 SF supports 37 units with no discretionary density approvals.</li>
+        <li>Height District 1VL allows 3 stories / 45 feet at a 3:1 FAR, roughly a 45,000 SF envelope.</li>
+        <li>No affordability set-aside required; conventional podium or garden product.</li>
+      </ul></div>
+      <div class="pmetric"><span class="l">Units</span><span class="v">Up to 37</span></div>
+      <div class="pmetric"><span class="l">Height</span><span class="v">3 stories / 45 ft</span></div>
+      <div class="pmetric"><span class="l">Affordability</span><span class="v">None required</span></div>
+    </div>
+    <div class="path-card pc">
+      <div class="ph">
+        <div class="ptag">Pathway B &middot; Mixed Income</div>
+        <div class="pname">TOC Tier 3</div>
+        <div class="punits">Approximately 63 units</div>
+      </div>
+      <div class="pb-body"><ul>
+        <li>Tier 3 grants a 70% density increase (about 63 units), 50% more FAR (to 4.5:1), and 2 additional stories / 22 feet.</li>
+        <li>Set-aside options: 23% Lower Income, 14% Very Low, or 10% Extremely Low Income units.</li>
+        <li>Parking capped at 0.5 spaces per unit, and AB 2097 can eliminate residential parking minimums entirely this close to major transit.</li>
+      </ul></div>
+      <div class="pmetric"><span class="l">Units</span><span class="v">~63</span></div>
+      <div class="pmetric"><span class="l">Height</span><span class="v">5 stories / 67 ft</span></div>
+      <div class="pmetric"><span class="l">Set-aside</span><span class="v">23% Low (options)</span></div>
+    </div>
+    <div class="path-card pd">
+      <div class="ph">
+        <div class="ptag">Pathway C &middot; 100% Affordable</div>
+        <div class="pname">State Density Bonus</div>
+        <div class="punits">Unit count set by the envelope</div>
+      </div>
+      <div class="pb-body"><ul>
+        <li>For 100% affordable projects near major transit, state density bonus law removes the maximum density limit; the buildable envelope, not zoning density, sets the unit count.</li>
+        <li>Up to 3 additional stories / 33 feet over the base zone and zero required parking.</li>
+        <li>This is the exit the comp set proves: the Whipple and Hoffman sites both recorded CMFA affordable bond financing at or after closing.</li>
+      </ul></div>
+      <div class="pmetric"><span class="l">Units</span><span class="v">Envelope-limited</span></div>
+      <div class="pmetric"><span class="l">Height</span><span class="v">Up to ~6 stories</span></div>
+      <div class="pmetric"><span class="l">Buyer</span><span class="v">Affordable developer</span></div>
+    </div>
+  </div>
+  <div class="info-callout"><strong>How to read these:</strong> Pathway A is fully by-right with no affordability obligation and the smallest envelope. Pathway B trades a modest set-aside for roughly 70% more density through the City's TOC program. Pathway C carries the largest envelope and the deepest buyer pool in today's market: mission-driven and tax-credit developers, the same profile that purchased three of the four comparable sites below.</div>
+  <div class="info-callout"><strong>Diligence note:</strong> The site currently holds five RSO-registered units across the two parcels. Tenant relocation under LAHD rules applies to redevelopment, and occupied RSO improvements can affect eligibility for certain streamlining programs (such as ED1), so buyers should verify their entitlement path with land-use counsel. The comp set shows this is a priced-in condition: the Hoffman and Acama sites both carried prewar and 1950s apartment buildings when they traded at the top of the range.</div>
+</section>
+
+<section class="card" id="comps">
+  <h2>Land Sales Comparables</h2>
+  <p>Four South Valley development sites purchased for affordable and multifamily redevelopment, all closed between March 2025 and July 2026, all within approximately 1.7 miles of the subject.</p>
+  <div class="img-frame" style="aspect-ratio:8/5;margin-bottom:14px"><img src="images/comp_map.png" alt="Map of the subject and the four land sale comparables"></div>
+  <div class="table-scroll">
+  <table>
+    <tr><th>#</th><th>Address</th><th>Submarket</th><th>Zoning</th><th class="num">Lot SF</th><th class="num">Sale Price</th><th class="num">$/Land SF</th><th>Closed</th><th class="num">Dist.</th></tr>
+    <tr><td>1</td><td>12021-12027 Hoffman St</td><td>Studio City</td><td>R3</td><td class="num">15,600</td><td class="num">$3,345,000</td><td class="num"><span class="psf hot">$214.42</span></td><td><span class="b-closed">Jul 2026</span></td><td class="num">1.7 mi</td></tr>
+    <tr><td>2</td><td>11143-11153 Acama St</td><td>North Hollywood</td><td>R3</td><td class="num">27,000</td><td class="num">$5,301,000</td><td class="num"><span class="psf">$196.33</span></td><td><span class="b-closed">Jul 2025</span></td><td class="num">1.1 mi</td></tr>
+    <tr><td>3</td><td>5137-5145 Colfax Ave</td><td>North Hollywood</td><td>C2</td><td class="num">16,000</td><td class="num">$3,030,000</td><td class="num"><span class="psf">$189.38</span></td><td><span class="b-closed">Nov 2025</span></td><td class="num">1.0 mi</td></tr>
+    <tr><td>4</td><td>10953 Whipple St</td><td>North Hollywood</td><td>R3</td><td class="num">17,982</td><td class="num">$3,100,000</td><td class="num"><span class="psf">$172.39</span></td><td><span class="b-closed">Mar 2025</span></td><td class="num">1.0 mi</td></tr>
+    <tr class="avg"><td></td><td>Average</td><td></td><td></td><td class="num">19,146</td><td class="num">$3,694,000</td><td class="num">$193.13</td><td></td><td></td></tr>
+  </table>
+  </div>
+  <p class="fn">Lot sizes, recorded prices, and closing dates verified against LA County Assessor and recorder data, August 2026; $/SF computed from the recorded price over assessor lot area. Comp 1 closed with $9.02M of CMFA affordable bond financing. Comp 2 is a three-parcel assemblage at $1,767,000 per parcel. Comp 4 subsequently re-traded in December 2025 at $3,600,000 ($200.20 per SF) into an affordable ground-lease structure with a $16.3M CMFA bond loan, confirming the affordable exit at a higher basis.</p>
+  <p>Every comparable is an R3 or commercial parcel. The subject's R4 zoning allows one unit per 400 SF of lot area, double the R3 standard of one per 800 SF, before TOC bonuses. On a per-buildable-unit basis the subject is the strongest site in this set.</p>
+</section>
+
+<section class="card" id="takeaways">
+  <h2>Key Takeaways</h2>
+  <div class="tk-grid">
+    <div class="tk"><span class="n">1</span><br><b>The band is $172 to $214 per land SF.</b> Four closed trades within 1.7 miles, averaging $193 per SF, define where South Valley development land is clearing.</div>
+    <div class="tk"><span class="n">2</span><br><b>Affordable capital is the buyer pool.</b> Three of four comps went to affordable developers, with CMFA bond financing of $9.02M and $16.3M recorded behind two of them. These buyers underwrite to the envelope, not to existing income.</div>
+    <div class="tk"><span class="n">3</span><br><b>The subject out-zones every comp.</b> R4-1VL plus TOC Tier 3 delivers roughly twice the by-right density per SF of land of the R3 comps, supporting pricing at or above the top of the band.</div>
+    <div class="tk"><span class="n">4</span><br><b>The market is moving up.</b> The trades step from $172 per SF in March 2025 to $214 per SF in July 2026, and the Whipple re-trade printed $200 per SF in December 2025 on the same dirt that sold for $172 nine months earlier.</div>
+    <div class="tk"><span class="n">5</span><br><b>Location does real work.</b> One block off Lankershim at the NoHo Arts District, in a Metro station area, where TOC Tier 3 and transit-based state incentives are at their strongest.</div>
+  </div>
+</section>
+
+<section class="card" id="pricing">
+  <h2>Pricing Recommendation</h2>
+  <div class="recommend">
+    <div class="r-eyebrow">Recommended Pricing Guidance</div>
+    <div class="r-band">$2,950,000 to $3,150,000</div>
+    <div class="r-sub">$197 to $210 per land SF on 15,008 SF &middot; guidance midpoint $3,050,000 ($203 per SF)</div>
+  </div>
+  <div class="price-compare">
+    <div class="pc-box"><div class="l">Comp Average Basis</div><div class="v">$2,898,000</div><div class="s">$193.13 per SF x 15,008 SF</div></div>
+    <div class="pc-box"><div class="l">Recommended Band</div><div class="v">$2,950,000-$3,150,000</div><div class="s">Premium to the comp average for R4 / TOC Tier 3 zoning</div></div>
+    <div class="pc-box"><div class="l">Per Buildable Unit</div><div class="v">$82,400 / $48,400</div><div class="s">At $3.05M: 37 by-right units / ~63 TOC units</div></div>
+  </div>
+  <p>The guidance applies the verified comp band to the subject's 15,008 SF and positions the site at the upper end for two reasons: the subject's R4 / TOC Tier 3 package supports materially more units per land SF than any R3 comp in the set, and the most recent print (Hoffman, July 2026, $214.42 per SF) shows the market has already traded through the middle of the band. At the $3.05M midpoint, an affordable developer building through the TOC or state density bonus pathways is at approximately $48,400 per buildable unit, well inside where this buyer pool has been transacting.</p>
+</section>
+
+<section class="card" id="marketing">
+  <h2>Marketing Reach</h2>
+  <p>Every LAAA Team exclusive listing is syndicated across 10 listing platforms, backed by direct outreach to our proprietary database of South Valley developers, affordable housing sponsors, and 1031 investors.</p>
+  <div class="plat-strip">
+    <span class="plat">The MLS</span>
+    <span class="plat">CoStar / LoopNet</span>
+    <span class="plat">Crexi</span>
+    <span class="plat">Brevitas</span>
+    <span class="plat">Zillow</span>
+    <span class="plat">Redfin</span>
+    <span class="plat">ApartmentBuildings.com</span>
+    <span class="plat">Duxre</span>
+    <span class="plat">MarcusMillichap.com</span>
+    <span class="plat">www.laaa.com</span>
+  </div>
+</section>
+
+<section class="card" id="listings">
+  <h2>Also Marketed by the LAAA Team</h2>
+  <p>The LAAA Team is currently marketing 11 land and development-site listings across Southern California. Each card links to the full offering at www.laaa.com.</p>
+  <div class="inv-grid">
+    <a class="inv-item" href="https://www.laaa.com/om/5151-e-arrow" target="_blank" rel="noopener"><span class="addr">5151 E Arrow Hwy</span><span class="city">Montclair</span><span class="price">$10,500,000</span><span class="facts">300 buildable units &middot; 260,271 SF (5.97 ac)</span><span class="desc">Unentitled 300-unit mixed-density apartment and townhome site in the North Montclair Downtown Specific Plan.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/5511-ethel" target="_blank" rel="noopener"><span class="addr">5511 Ethel Ave</span><span class="city">Sherman Oaks</span><span class="price">$9,000,000</span><span class="facts">199 entitled units &middot; 41,810 SF (0.96 ac)</span><span class="desc">Entitled 199-unit affordable site (ED1 + AB 1763 density bonus, TOC Tier 3) across from LA Valley College.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/185-monterey" target="_blank" rel="noopener"><span class="addr">185 Monterey Rd</span><span class="city">South Pasadena</span><span class="price">$8,000,000</span><span class="facts">53 entitled units &middot; 54,794 SF (1.26 ac)</span><span class="desc">Fully entitled 53-unit condominium development, tract map approved June 2026.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/2600-s-robertson" target="_blank" rel="noopener"><span class="addr">2600 S Robertson Blvd</span><span class="city">Los Angeles</span><span class="price">$7,995,000</span><span class="facts">149 entitled units &middot; 16,220 SF</span><span class="desc">ED1 100% affordable mixed-use approval, 149 units over ground-floor retail at a 3.9:1 FAR.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/12335-osborne" target="_blank" rel="noopener"><span class="addr">12335 Osborne Pl</span><span class="city">Pacoima</span><span class="price">$3,950,000</span><span class="facts">293 RTI units &middot; 46,035 SF (1.06 ac)</span><span class="desc">Ready-to-Issue 293-unit ED1 affordable development in an Opportunity Zone, zero required parking.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/601-pearl" target="_blank" rel="noopener"><span class="addr">601 Pearl Street</span><span class="city">Ojai</span><span class="price">$3,700,000</span><span class="facts">9 homes / 10 lots &middot; 49,540 SF (1.14 ac)</span><span class="desc">Shovel-ready 9-cottage Craftsman development on 10 platted lots in the Village Mixed-Use District.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/1656-sawtelle" target="_blank" rel="noopener"><span class="addr">1656 Sawtelle Blvd</span><span class="city">Los Angeles</span><span class="price">$2,995,000</span><span class="facts">38 buildable units, up to ~52 with bonus &middot; 7,005 SF</span><span class="desc">Cleared, unentitled West LA (Little Osaka) apartment site, ~38 units via MIIP, ~52 via AB 1287/AHIP.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/6540-shoup" target="_blank" rel="noopener"><span class="addr">6540 Shoup Ave</span><span class="city">West Hills</span><span class="price">$2,000,000</span><span class="facts">10 homes + 10 ADUs &middot; 20,909 SF</span><span class="desc">SB 1123 fully entitled small-lot subdivision with approved Tentative Tract Map, 10 detached homes plus 10 ADUs.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/3837-college" target="_blank" rel="noopener"><span class="addr">3837 College Ave</span><span class="city">Culver City</span><span class="price">$1,800,000</span><span class="facts">21 buildable units &middot; 7,500 SF</span><span class="desc">Unentitled CCR4 infill site in the Culver City Arts District, approximately 21 units.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/631-637-w-6th" target="_blank" rel="noopener"><span class="addr">631-637 W 6th Street</span><span class="city">San Pedro</span><span class="price">$1,725,000</span><span class="facts">10 buildable units &middot; 13,799 SF</span><span class="desc">Two-parcel by-right site: SB 1123 for-sale subdivision or duplexes plus ADUs.</span><span class="go">View Listing</span></a>
+    <a class="inv-item" href="https://www.laaa.com/om/6901-woodman" target="_blank" rel="noopener"><span class="addr">6901 Woodman Avenue</span><span class="city">Van Nuys</span><span class="price">$1,500,000</span><span class="facts">55 RTI units &middot; 10,005 SF</span><span class="desc">RTI 55-unit ED1/TOC affordable land, permits ready to pull.</span><span class="go">View Listing</span></a>
+  </div>
+  <p class="fn">Active laaa.com land listings as of August 11, 2026, excluding properties in escrow.</p>
+</section>
+
+<section class="card" id="team">
+  <h2>The LAAA Team</h2>
+  <div class="team-leaders">
+    <div class="leader">
+      <img class="headshot-img-lg" src="images/headshot_filip-niculete.jpg" alt="Filip Niculete">
+      <div class="nm">Filip Niculete</div>
+      <div class="tt">Senior Managing Director Investments</div>
+      <div class="ct">(818) 212-2748 &middot; CA DRE 01905352</div>
+    </div>
+    <div class="leader">
+      <img class="headshot-img-lg" src="images/headshot_glen-scher.jpg" alt="Glen Scher">
+      <div class="nm">Glen Scher</div>
+      <div class="tt">Senior Managing Director Investments</div>
+      <div class="ct">(818) 212-2808 &middot; CA DRE 01962976</div>
+    </div>
+  </div>
+  <div class="team-roster">
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_aida-memary-scher.jpg" alt="Aida Memary Scher"><div class="nm">Aida Memary Scher</div><div class="tt">Associate Director Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_morgan-wetmore.jpg" alt="Morgan Wetmore"><div class="nm">Morgan Wetmore</div><div class="tt">Associate</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_alexandro-tapia.jpg" alt="Alexandro Tapia"><div class="nm">Alexandro Tapia</div><div class="tt">Associate Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_logan-ward.jpg" alt="Logan Ward"><div class="nm">Logan Ward</div><div class="tt">Associate Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_luka-leader.jpg" alt="Luka Leader"><div class="nm">Luka Leader</div><div class="tt">Associate Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_blake-lewitt.jpg" alt="Blake Lewitt"><div class="nm">Blake Lewitt</div><div class="tt">Associate Investments</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_mike-palade.jpg" alt="Mike Palade"><div class="nm">Mike Palade</div><div class="tt">Agent Assistant</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_tony-dang.jpg" alt="Tony H. Dang"><div class="nm">Tony H. Dang</div><div class="tt">Business Operations Manager</div></div>
+    <div class="roster-card"><img class="headshot-img-lg" src="images/roster_tirajeh-vossoughi-horton.jpg" alt="Tirajeh Vossoughi-Horton"><div class="nm">Tirajeh Vossoughi-Horton</div><div class="tt">Investment Brokerage Intern</div></div>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-title">Marcus &amp; Millichap | The LAAA Team</div>
+    <p>16830 Ventura Blvd, Suite 100, Encino, CA 91436 &middot; www.laaa.com</p>
+    <p>This Broker Opinion of Value is not an appraisal and has been prepared for the exclusive use of the party to whom it is addressed. The information contained herein was obtained from sources we believe to be reliable; however, Marcus &amp; Millichap makes no guarantee, warranty, or representation as to its accuracy or completeness. Development potential, unit counts, and program eligibility are planning-level estimates only and must be independently verified with the City of Los Angeles, an architect, and land-use counsel. Map and aerial imagery &copy; Google.</p>
+  </div>
+</footer>
+
+</body>
+</html>
